@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSmart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon"  href="1.jpeg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="pacifico-regular">
+
+    <div class="navbar">
+        <h1>BookSmart</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Psychlogy of Money</h2>
+            <br>
+            <h3>Morgan Housel</h3>
+            <br>
+            <p> It explores the complex relationship people have with money, 
+                emphasizing how emotions, biases, and personal experiences 
+                influence financial decisions. Housel uses storytelling to show 
+                that financial success is often more about behavior than knowledge, 
+                and how our psychological traits shape wealth-building habits. The book provides
+                 insights into wealth, happiness, risk, and decision-making.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>add Book</h2>
+        <form> 
+            <input type="text" placeholder="Book-Title" id="book-title-input">
+            <input type="text" placeholder="Book-Author" id="book-author-input">
+            <textarea placeholder="Short-Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button ID="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
